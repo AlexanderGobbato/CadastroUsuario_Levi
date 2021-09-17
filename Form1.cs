@@ -28,7 +28,7 @@ namespace CadastroUsuario
             try
             {
             conexao.Open();
-            MessageBox.Show("Conexão Realizada", "Conexão com Banco");
+            //MessageBox.Show("Conexão Realizada", "Conexão com Banco");
             }
             catch (Exception ex)
             {
@@ -167,7 +167,8 @@ namespace CadastroUsuario
 
         private void btnExibir_Click(object sender, EventArgs e)
         {
-
+            frmListarAlunos frm = new frmListarAlunos();
+            frm.Show();
         }
     }
 }
